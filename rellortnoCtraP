@@ -62,6 +62,10 @@ settings().Rendering.TextureQuality = Enum.TextureQuality.Low
 
 end
 
+local function fly()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OBFhm5650lol/F/refs/heads/main/F", true))()
+end
+
 local jumpPowerEnabled = false
 local targetJumpPower = 50 -- Default
 
@@ -80,6 +84,18 @@ MainTab:Button({
         WindUI:Notify({
             Title = "PartController",
             Content = "Optimized!..",
+            Duration = 3, -- in seconds
+        })
+    end
+})
+
+MainTab:Button({
+    Title = "Fly",
+    Callback = function() 
+        fly()
+        WindUI:Notify({
+            Title = "PartController",
+            Content = "FlyGui Loaded..",
             Duration = 3, -- in seconds
         })
     end
