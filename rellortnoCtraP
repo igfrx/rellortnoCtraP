@@ -1160,7 +1160,7 @@ G2L["RaidusTextBox_3"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41)
 G2L["RaidusTextBox_3"]["PlaceholderText"] = "Radius"
 G2L["RaidusTextBox_3"]["Size"] = UDim2.new(0, 100, 0, 20)
 G2L["RaidusTextBox_3"]["Position"] = UDim2.new(0, 16, 0, 62)
-G2L["RaidusTextBox_3"]["Text"] = "100"
+G2L["RaidusTextBox_3"]["Text"] = "70"
 
 -- Radius TextBox Corner
 G2L["UICorner_4"] = Instance.new("UICorner", G2L["RaidusTextBox_3"])
@@ -1199,7 +1199,7 @@ G2L["ASTextBox_9"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41)
 G2L["ASTextBox_9"]["PlaceholderText"] = "Speed"
 G2L["ASTextBox_9"]["Size"] = UDim2.new(0, 100, 0, 20)
 G2L["ASTextBox_9"]["Position"] = UDim2.new(0, 16, 0, 86)
-G2L["ASTextBox_9"]["Text"] = "1000"
+G2L["ASTextBox_9"]["Text"] = "555"
 
 -- AS TextBox Corner
 G2L["UICorner_a"] = Instance.new("UICorner", G2L["ASTextBox_9"])
@@ -1235,10 +1235,10 @@ G2L["UIStroke_e"]["Thickness"] = 3
 G2L["UIStroke_e"]["Color"] = Color3.fromRGB(41, 41, 41)
 
 -- Ring Parts Logic
-local radius = tonumber(G2L["RaidusTextBox_3"].Text) or 100
+local radius = tonumber(G2L["RaidusTextBox_3"].Text) or 70
 local height = 100
 local rotationSpeed = 1
-local attractionStrength = tonumber(G2L["ASTextBox_9"].Text) or 1000
+local attractionStrength = tonumber(G2L["ASTextBox_9"].Text) or 555
 local ringPartsEnabled = false
 
 local function RetainPart(Part)
